@@ -1,0 +1,30 @@
+{
+  "name": "markdown-simple-link",
+  "version": "1.0.0",
+  "description": "A browser extension to simplify creating links in markdown syntax.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint",
+    "init": "tsc --init",
+    "build": "tsc --outdir build",
+    "postbuild": "node ./manifest/generate.mjs && copyfiles statics/**/* build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heythisispaul/markdown-simple-link.git"
+  },
+  "author": "Paul Richard <heythisispaul@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heythisispaul/markdown-simple-link/issues"
+  },
+  "homepage": "https://github.com/heythisispaul/markdown-simple-link#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.16.0",
+    "typescript": "^4.6.4"
+  }
+}
